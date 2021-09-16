@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.main {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+header .logo {
+  width: 200px;
+}
+
+header .logo img {
+  width: 100%;
+}
+.menu-icon {
+  display: none;
+  position: absolute;
+  left: 20px;
+}
+.ham {
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+.menu {
+  flex: 1;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu li {
+  margin: 0 10px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.content-area {
+  flex: 1;
+  margin: 30px;
+}
+.content-area h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+  margin-top: 80px;
+}
+
+.content-area .cta {
+  display: flex;
+  margin-top: 40px;
+}
+.cta .btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #29be56;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cta .btn-blue {
+  background-color: #3489de;
+}
+
+.phone-area .phone1 {
+  height: 600px;
+  width: auto;
+  position: relative;
+  z-index: 100;
+  top: 15px;
+}
+
+.phone-area .phone2 {
+  height: 600px;
+  width: auto;
+  position: relative;
+  margin-left: -90px;
+  z-index: 10;
+}
+@media (min-width: 650px) and (max-width: 850px) {
+  header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .content-area {
+    text-align: center;
+  }
+  .content-area h1 {
+    margin-top: 0;
+  }
+  .content-area p {
+    margin: 0 40px;
+  }
+  .content-area .cta {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .phone-area {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .phone-area .phone1 {
+    top: 0;
+    margin: 0 10px;
+    height: 680px;
+  }
+  .phone-area .phone2 {
+    height: 680px;
+    margin-left: 0;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header .logo {
+    width: 100%;
+    text-align: center;
+  }
+  header .logo img {
+    width: 200px;
+  }
+
+  .content-area h1{
+      font-size: 32px;
+      padding-bottom:10px;
+  }
+
+  .content-area .cta{
+      flex-direction: column;
+      align-items: center;
+  }
+  .container{
+      flex-direction: column;
+  }
+  .phone-area{
+      margin-bottom: 50px;
+      text-align: center;
+  }
+
+  .phone-area .phone1 {
+    height: 400px;
+    top: 10px;
+  }
+  .phone-area .phone2 {
+    height: 400px;
+    margin-left: -80px;
+    
+  }
+}
